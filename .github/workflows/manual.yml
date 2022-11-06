@@ -36,5 +36,5 @@ jobs:
       run: echo "Params,APP - ${{ github.event.inputs.appid }};ENV - ${{ github.event.inputs.env }}"    
     # Runs a single command using the runners shell
     - name: Read File Content
-      run: curl -H "Accept:application/vnd.github+json" -H "Authorization:Bearer ${{ secrets.GITHUBTOKEN }}" https://api.github.com/repos/OWNER/REPO/contents/PATH
+      run: curl -H "Accept:application/vnd.github+json" -H "Authorization:Bearer ${{ secrets.GITHUBTOKEN }}" https://api.github.com/repos/rajeshpillai01/shared-config-stage/contents/PATH
     
