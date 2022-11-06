@@ -35,5 +35,5 @@ jobs:
     - name: Display Params
       run: echo "Params,APP - ${{ github.event.inputs.appid }};ENV - ${{ github.event.inputs.env }}"    
     # Runs a single command using the runners shell
-    - name: Read File Content\
-      run: curl -H "Accept:application/vnd.github+json" -H "Authorization:Bearer ${{ secrets.GITHUBTOKEN }}" https://api.github.com/repos/rajeshpillSetting to application/vnd.github+json is recommended.ai01/shared-config-stage/contents/salesforce-dev/secrets.json| jq -r '.content'    
+    - name: Read File Content
+      run: curl -H "Accept:application/vnd.github+json" -H "Authorization:Bearer ${{ secrets.GITHUBTOKEN }}" https://api.github.com/repos/rajeshpillai01/shared-config-stage/contents/salesforce-dev/secrets.json| jq -r '.content'    
